@@ -4,8 +4,8 @@
 CHALLENGE 1
 
 Write a function named greeting that takes in a string and returns the string in all uppercase letters.
-
-Then, write a function named speaker that takes in a string and a callback function. The speaker function should return the string in all uppercase letters only by invoking the callback.
+Then, write a function named speaker that takes in a string and a callback function. 
+The speaker function should return the string in all uppercase letters only by invoking the callback.
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
@@ -17,7 +17,8 @@ return go(message);};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named addValues that takes in an array and a value and pushes the value into the array. This function does not need a return statement.
+Write a function named addValues that takes in an array and a value and pushes the value into the array.
+ This function does not need a return statement.
 
 Then, write a function named addNumbers that takes in four arguments:
   - A number to be added to an array
@@ -32,30 +33,45 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   // Solution code here...
+   arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+  for(let i=0; i<times ; i++){
+    callback(arr, num);
+  }
+  return arr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named removeOne that takes in a number and an array. If the number divided by three has a remainder of two, pop one element off of the array.
+Write a function named removeOne that takes in a number and an array.
+ If the number divided by three has a remainder of two, pop one element off of the array.
 
 Hint: you may want to look into the modulo operation.
 
-Then, write a function named removeElements that takes in an array and a callback. This function should use a for loop to iterate over the array and invoke the callback once for each element in the array.
+Then, write a function named removeElements that takes in an array and a callback.
+ This function should use a for loop to iterate over the array and invoke the callback once for each element in the array.
 
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const removeOne = (num, arr) => {
   // Solution code here...
+  if (num%3===2){
+    arr.pop();
+  }
 };
 
 const removeElements = (arr, callback) => {
   // Solution code here...
+  for(let i=0; i<arr.length; i++){
+    callback(arr[i], arr);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -65,7 +81,11 @@ Write a function named removeWithForEach that produces the same output as challe
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithForEach = (arr, callback) => {
-  // Solution code here...
+arr.forEach(element => {
+  callback(element,arr);
+  
+});
+return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -73,13 +93,22 @@ CHALLENGE 5
 
 Write a function named removeWithAnon that produces the same output as challenges 3 and 4.
 
-This function should use forEach again, but rather than taking in a callback as an argument, define an anonymous function as the argument to forEach.
+This function should use forEach again, but rather than taking in a callback as an argument,
+ define an anonymous function as the argument to forEach.
 
 This anonymous function should accept up to three arguments: the element, the index, and the array.
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithAnon = (arr) => {
   // Solution code here...
+  arr.forEach(ele => {
+    if(ele%3 === 2){
+      arr.pop();
+
+    }
+
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -100,7 +129,15 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
+let result =[];
   // Solution code here...
+  availableItems.forEach(val =>{
+    if(val.available == true){
+      result.push(val.name);
+    }
+
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -117,8 +154,21 @@ Iterate over the array using forEach to determine the output based on several ru
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
-const fizzbuzz = (arr) => {
   // Solution code here...
+  const fizzbuzz = (arr) => {
+    const newArr = [];
+    arr.forEach(element => {
+      if (element%3 === 0 && element%5 === 0) {
+        newArr.push('Fizz Buzz');
+      } else if (element%3 === 0) {
+        newArr.push('Fizz');
+      } else if (element%5 === 0) {
+        newArr.push('Buzz');
+      } else {
+        newArr.push(element);
+      }
+    });
+    return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
