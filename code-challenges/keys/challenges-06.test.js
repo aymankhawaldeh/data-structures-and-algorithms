@@ -1,5 +1,7 @@
 'use strict';
 
+import { objectExpression } from "@babel/types";
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
@@ -71,9 +73,14 @@ let characters = [
 ];
 
 const getHouses = (arr) => {
-  let houses = [];
+ let houses = [];
   // Solution code here...
+  arr.forEach(element => {
+   houses.push(element.house);
+    
+  });
   return houses;
+ 
 };
 
 /*------------------------------------------------------------------------------------------------
@@ -90,6 +97,13 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
+  let hasChildrenValues = false;
+  arr.forEach(element => {
+    if (element.name === character){
+      has = has ;
+    }
+  });
+  return has;
 
 };
 
