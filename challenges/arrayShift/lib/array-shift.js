@@ -3,9 +3,9 @@
 let insertShiftArr = module.exports = {};
 
 insertShiftArr.insertShiftArray = (arr,val) => {
-  let long = Math.floor(arr.length/2);
+  let long = Math.ceil(arr.length/2);
   let arr2=[];
-  for(i=0; i<arr.length; i++){
+  for(let i=0; i<arr.length; i++){
     if(i<long){
       arr2[i]=arr[i]
     }
