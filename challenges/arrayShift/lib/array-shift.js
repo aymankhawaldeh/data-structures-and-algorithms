@@ -1,8 +1,9 @@
+'use strict';
 
-let arr = ['a','b','d','e'];
-let val = 'c';
-let long = Math.floor(arr.length/2);
-function insertShiftArray  (arr,val){
+let insertShiftArr = module.exports = {};
+
+insertShiftArr.insertShiftArray = (arr,val) => {
+  let long = Math.floor(arr.length/2);
   let arr2=[];
   for(i=0; i<arr.length; i++){
     if(i<long){
@@ -20,4 +21,3 @@ function insertShiftArray  (arr,val){
   
 
 }
-insertShiftArray (arr,val)

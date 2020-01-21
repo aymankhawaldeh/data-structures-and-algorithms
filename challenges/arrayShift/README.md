@@ -1,6 +1,6 @@
 # data-structures-and-algorithms
+## Author: Ayman-Alkhawaldeh
 
-## Author: Qusai-Alhanaktah
 ## Links and Resources
 1- submission PR
 2- ci/cd (GitHub Actions)
@@ -9,7 +9,8 @@
 npm i eslint jest
 
 ## How to initialize/run your application (where applicable)
-* e.g. npm start
+e.g. npm start
+
 ## Tests
 
 1- How do you run tests? npm test
@@ -17,4 +18,4 @@ npm i eslint jest
 3- Describe any tests that you did not complete, skipped, etc
 
 ## UML
-Link to an image of the UML for your application and response to events
+https://ibb.co/CPRM5GY
