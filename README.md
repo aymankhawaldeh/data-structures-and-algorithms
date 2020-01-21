@@ -1,6 +1,6 @@
 # data-structures-and-algorithms
 
-## Author: Qusai-Alhanaktah
+## Author: Ayman Alkhawaldeh
 ## Links and Resources
 1- submission PR
 2- ci/cd (GitHub Actions)
@@ -17,4 +17,5 @@ npm i eslint jest
 3- Describe any tests that you did not complete, skipped, etc
 
 ## UML
+
 Link to an image of the UML for your application and response to events
