@@ -1,16 +1,27 @@
 {
   "name": "3-code-challenges",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Author: Qusai-Alhanaktah ## Links and Resources 1- submission PR 2- ci/cd (GitHub Actions)",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage --verbose",
-    "watch": "jest --watchAll"
+    "lint": "eslint '**/*.js'",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "jest": "^24.1.0"
-  }
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aymankhawaldeh/data-structures-and-algorithms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aymankhawaldeh/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/aymankhawaldeh/data-structures-and-algorithms#readme"
 }
