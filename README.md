@@ -1,21 +1,20 @@
-# data-structures-and-algorithms
+# Challenge 12
 
-## Author: Ayman Alkhawaldeh
-## Links and Resources
-1- submission PR
-2- ci/cd (GitHub Actions)
+# Fifo Animal Shelter
 
-## Setup
-npm i eslint jest
+# Challenge Summary
+this challenge is about creating a queue that only accepts dogs and cats, as it's value.
 
-## How to initialize/run your application (where applicable)
-* e.g. npm start
-## Tests
+## Challenge Description
+create a method that enqueue and dequeue from a queue, it only accepts cat and dog as value to enqueue and any other value will return null, and dequeues anything excepts cat and dog.
 
-1- How do you run tests? npm test
-2- Any tests of note? jest --verbose --coverage
-3- Describe any tests that you did not complete, skipped, etc
+## Approach & Efficiency
+hard coding is the approach used, used a class notation, and the methods only have if statements, for the queue and dequeue.
 
-## UML
+### Big O
+time O (1)
+space O (1)
+no iteration used so the big O is O(1)
 
-Link to an image of the UML for your application and response to events
+## Solution
+![fifo-animal-shelter](assets/fifo-animal-shelter.jpg)
