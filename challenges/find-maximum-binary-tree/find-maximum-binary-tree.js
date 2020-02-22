@@ -1,6 +1,6 @@
 class Node {
   constructor(val, right = null, left = null){
-    this.value = val;
+    this.val = val;
     this.left = left;
     this.right = right;
   }
@@ -13,12 +13,12 @@ class BinaryTreeMaxValue {
 
   findMaximumValue(){
     let storage = [];
-    let _tracing = (node)=>{
+    let _walk = (node)=>{
       storage.push(node.val);
-      if (node.left) _tracing(node.left);
-      if (node.right) _tracing(node.right);
+      if (node.left) _walk(node.left);
+      if (node.right) _walk(node.right);
     };
-    _tracing(this.root);
+    _walk(this.root);
     let maximum = 0;
     for (let i = 0; i < storage.length; i++) {
       if(storage[i] > maximum) maximum = storage[i];
