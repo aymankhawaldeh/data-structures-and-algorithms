@@ -29,13 +29,9 @@ create a method that creates a hashed map, it should have a hashing method, and 
   space O(1)
    Because in the worst case scenario, the whole values are located on the same bucket and the key we are searching for is located at the end of the linked list, so a Big O(n). And the space is O(1), because we are returning a boolean.
 
-### Acknowledgments
-- [Mr-Ahmad-Alawad](https://github.com/Ahmad-Alawad)
-- [Qusai-Al-Hanaktah](https://github.com/Qusai-alhanaktah)
 
-### worked as a pair
-- Qusai A. Al-Hanaktah
-- Ahmad K. Al-Mahasneh
+
+
 
 ## Solution
 ![hashtable](assets/hashtable.jpg)
