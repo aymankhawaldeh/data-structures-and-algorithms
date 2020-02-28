@@ -1,6 +1,6 @@
 'use strict';
 
-const mergeSort = require('../merge-sort.js').default;
+const mergeSort = require('../merge-sort.js');
 
 describe('mergeSort', () => {
   it('should return a sorted array with no changes', () => {
