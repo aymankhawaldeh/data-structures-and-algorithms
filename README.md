@@ -1,6 +1,5 @@
 # data-structures-and-algorithms
 
-## Author: Qusai-Alhanaktah
 ## Links and Resources
 1- submission PR
 2- ci/cd (GitHub Actions)
